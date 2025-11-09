@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in Form</title>
+    <style>
+        /* *{
+            text-align: center;
+            justify-content: center;
+            padding: 6px;
+            margin: 0px;
+        } */
+        #su{
+            width:120px;
+            height:40px;
+            background-color: black;
+            color:white;
+            font-weight: bold;
+            font-size: 25px;
+            text-transform: uppercase;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        #su:hover{
+            background-color: green;
+            color: white;
+
+        }
+        .sform{
+            border:5px inset;
+            width: 300px;
+            height:250px;
+            text-transform:uppercase;
+            text-align: center;
+            display: none;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="su">
+        sign up
+    </button>
+    <div class="sform" id="sfrom">
+        <h1>sign up form</h1>
+        <form>
+            <label for="">USER ID</label><br>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="">PASSWORD</label><br>
+            <input type="text" name="password" id="pass"><br><br>
+            <label for="">confirm password</label>
+            <input type="text" name="confirm password" id="cpass"><br><br>
+
+        </form>
+
+    </div>
+    
+    <script>
+        /*
+            1.console.log()
+            2.document.write()
+            3.alert()
+            4.confirm()
+            5.prompt()
+            6.getElementById()
+            7.addEvenListener()
+            8.setInterval()
+            9.setTimeOut()
+
+          user define function
+        */
+    //    function showName()
+    //    {
+    //     document.writeln("<br>Hello JS!")
+    //    }
+    //    setInterval(showName,10000)
+    // setTimeout(()=>{
+    //     var sf=document.getElementById('sfrom')
+    //     sf.style.display='block'
+    // },30000)
+    var btn=document.getElementById('su')
+    btn.addEventListener('click',()=>{
+        alert("plz wait for sometime")
+        setTimeout(()=>{
+            var sf=document.getElementById('sfrom')
+            sf.style.display='block'
+        },5000)
+    })
+    </script>
+</body>
+</html>
